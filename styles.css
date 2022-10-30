@@ -39,7 +39,7 @@ header {
 	display: flex;
 	align-items: center;
 	flex-direction: row-reverse;
-	height: 5vh;
+	height: 60px;
 	box-shadow: 0px 1px 17px -5px rgba(0,0,0,0.75);
 }
 
@@ -92,6 +92,10 @@ aside h1,
 aside h6 {
 	padding-bottom: .5rem;
 }
+
+.button {
+
+}
 main {
 	display: flex;
 	justify-content: center;
@@ -101,22 +105,25 @@ main {
 	flex-grow: 1;
 	scroll-behavior: smooth;
 	overflow: scroll;
-	scrollbar-color: var(--00dp-backgroung-color);
 	overflow-x: hidden;
-	padding: 2rem;
+	padding: 2rem 2rem 2rem 2rem;
 
 	/* border: 1px solid red; */
 }
 
 .card {
 	flex-grow: 1;
-	background-color: var(--01dp-background-color);
-	border-radius: 7px;
+	/* background-color: var(--01dp-background-color);
+	border-radius: 7px; */
 	width: 100%;
 	min-height: 100%;
 	padding: 1rem;
-	margin-bottom: 4rem;
-	box-shadow: 0px 1px 17px -5px rgba(0,0,0,0.75);
+	margin-bottom: 2rem;
+	/* box-shadow: 0px 1px 17px -5px rgba(0,0,0,0.75); */
+}
+
+.bottom-card {
+	margin-bottom: 0;
 }
 
 
@@ -139,10 +146,34 @@ main {
 #profile-picture {
 	height: 275px;
 	margin-top: 20px;
-	/* margin-left: 20px; */
-	/* z-index: 1; */
-	/* border-radius: 50%; */
 }
+
+#button-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+button,
+.button {
+	background-color: var(--02dp-background-color);
+	width: 15rem;
+	height: 3rem;
+	/* margin-top: 1rem; */
+	border-radius: 0;
+	border: none;
+}
+.button:hover{
+	background-color: var(--06dp-background-color);
+}
+.button:active{
+	background-color: var(--12dp-background-color);
+}
+
 
 footer {
 	display: flex;
@@ -153,7 +184,8 @@ footer {
 	clear: both;
 	bottom: 0;
 	z-index: 2;
-	/* border: 1px solid red; */
 	height: 5vh;
 	box-shadow: 0px -.5px 5px 0px rgba(0,0,0,0.75);
+
+		/* border: 1px solid red; */
 }
