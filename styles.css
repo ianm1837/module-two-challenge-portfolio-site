@@ -11,6 +11,9 @@
 	--16dp-background-color: rgba(255, 255, 255, 0.15);
 	--24dp-background-color: rgba(255, 255, 255, 0.16);
 
+	--primary-button-color: #6002EE;
+	--complimentary-button-color: #90ee02;
+
 }
 
 * {
@@ -18,7 +21,7 @@
 	/* padding: 0; */
 	margin: 0;
 	font-family: Roboto,'Courier New', Courier, monospace;
-	color: #fff;
+	color: rgb(235, 235, 235);
 	padding-inline-start: 0px;
 
 }
@@ -34,21 +37,33 @@ body {
 }
 
 header {
-	background: linear-gradient(to left, rgb(11, 11, 11), rgba(0, 0, 0, 0)), url(/images/header-picture.jpg);
+	/* background: linear-gradient(to left, rgb(11, 11, 11), rgba(0, 0, 0, 0)), url(/images/header-picture.jpg); */
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/images/header-picture.jpg);
+
 	background-size: cover;
 	display: flex;
 	align-items: center;
-	flex-direction: row-reverse;
+	justify-content: center;
+	flex-direction: row;
 	height: 60px;
 	box-shadow: 0px 1px 17px -5px rgba(0,0,0,0.75);
 }
 
-header ul {
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+
+		/* border: 1px solid red; */
+}
+
+
+/* header ul {
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
 
-	/* border: 1px solid red; */
+
 }
 
 header ul li {
@@ -63,7 +78,7 @@ header ul li a {
 header ul li a:hover {
 	color: rgb(83, 83, 83);
 	background-color: #fff;
-}
+} */
 
 #main-container {
 	display: flex;
@@ -72,7 +87,7 @@ header ul li a:hover {
 	z-index: 1;
 }
 
-aside {
+/* aside {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -86,16 +101,13 @@ aside {
 
 	/* border: 1px solid red; */
 	
-}
+/* } */
 
-aside h1,
-aside h6 {
+h1,
+h6 {
 	padding-bottom: .5rem;
 }
 
-.button {
-
-}
 main {
 	display: flex;
 	justify-content: center;
@@ -103,10 +115,13 @@ main {
 	flex-direction: column;
 	justify-content: flex-start;
 	flex-grow: 1;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth; 
 	overflow: scroll;
 	overflow-x: hidden;
 	padding: 2rem 2rem 2rem 2rem;
+
+	scroll-snap-type: y mandatory;
+
 
 	/* border: 1px solid red; */
 }
@@ -119,19 +134,59 @@ main {
 	min-height: 100%;
 	padding: 1rem;
 	margin-bottom: 2rem;
+
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+
+
 	/* box-shadow: 0px 1px 17px -5px rgba(0,0,0,0.75); */
+
+	/* border: 1px solid red; */
 }
+
+#section-one {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	
+}
+
+#about-profile-picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 500px;
+	height: 500px;
+	/* border: 1px solid red; */
+}
+
+#about-content-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 500px;
+	height: 500px;
+
+	/* border: 1px solid red; */
+}
+
+#about-content {
+	font-size: 1.5rem;
+}
+
+
 
 .bottom-card {
 	margin-bottom: 0;
 }
 
-
 #profile-picture-container {
-
 	display: flex;
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
 	margin: 1rem;
 	overflow: hidden;
 	border-radius: 50%;
@@ -139,12 +194,14 @@ main {
 	align-items: center;
 	min-width: 200px;
 	padding: 1rem;
+	border: 10px solid var(--01dp-background-color);
 	box-shadow: 0px 1px 17px -5px rgba(0,0,0,0.75);
 
+	/* border: 1px solid red; */
 }
 
 #profile-picture {
-	height: 275px;
+	height: 535px;
 	margin-top: 20px;
 }
 
@@ -160,20 +217,22 @@ main {
 
 button,
 .button {
-	background-color: var(--02dp-background-color);
+	font-size: large;
+	background: linear-gradient( rgba(0, 0, 0, 0) 95%, var(--primary-button-color) 5%);
+	background-size: 100% 200%;
+	transition: background .3s;
 	width: 15rem;
 	height: 3rem;
-	/* margin-top: 1rem; */
-	border-radius: 0;
+	margin: 1rem;
+	border-radius: 5px;
 	border: none;
 }
 .button:hover{
-	background-color: var(--06dp-background-color);
+	background-color: var(--01dp-background-color);
 }
-.button:active{
-	background-color: var(--12dp-background-color);
+.button-active{
+	background-position: bottom;
 }
-
 
 footer {
 	display: flex;
