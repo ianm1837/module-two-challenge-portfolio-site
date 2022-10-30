@@ -13,7 +13,6 @@
 
 	--primary-button-color: #6002EE;
 	--complimentary-button-color: #90ee02;
-
 }
 
 * {
@@ -23,7 +22,6 @@
 	font-family: Roboto,'Courier New', Courier, monospace;
 	color: rgb(235, 235, 235);
 	padding-inline-start: 0px;
-
 }
 
 html {
@@ -53,13 +51,6 @@ header nav {
 	justify-content: space-between;
 }
 
-#main-container {
-	display: flex;
-	flex-direction: row;
-	height: 95vh;
-	z-index: 1;
-}
-
 h1,
 h6 {
 	padding-bottom: .5rem;
@@ -67,6 +58,7 @@ h6 {
 
 main {
 	display: flex;
+	height: 95vh;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
