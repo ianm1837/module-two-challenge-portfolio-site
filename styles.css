@@ -29,13 +29,11 @@ html {
 	background-color: var(--00dp-backgroung-color);
 }
 body {
-	/* display: block; */
 	height: 100%;
+	overflow: hidden;
 }
 
 header {
-	/* background-color: var(--02dp-background-color); */
-
 	background: linear-gradient(to left, rgb(11, 11, 11), rgba(0, 0, 0, 0)), url(/images/header-picture.jpg);
 	background-size: cover;
 	display: flex;
@@ -79,40 +77,48 @@ aside {
 	flex-direction: column;
 	align-items: center;
 	padding-top: 2rem;
-	/* float: left; */
-	/* width: 325px; */
 	min-width: 325px;
 	max-width: 325px;
 	height: 100%;
 	background: var(--01dp-background-color);
-	box-shadow: 0px 1px 17px -20px rgba(0,0,0,0.75);
+	box-shadow: 0px -6px 17px -5px rgba(0,0,0,0.75);
 
 
 	/* border: 1px solid red; */
 	
 }
 
+aside h1,
+aside h6 {
+	padding-bottom: .5rem;
+}
 main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	justify-content: flex-start;
 	flex-grow: 1;
-	/* float: right; */
-	/* width: 80%; */
-	/* height: 100%; */
 	scroll-behavior: smooth;
 	overflow: scroll;
 	scrollbar-color: var(--00dp-backgroung-color);
 	overflow-x: hidden;
+	padding: 2rem;
 
 	/* border: 1px solid red; */
 }
 
-main h1,
-main h6 {
+.card {
+	flex-grow: 1;
+	background-color: var(--01dp-background-color);
+	border-radius: 7px;
+	width: 100%;
+	min-height: 100%;
 	padding: 1rem;
+	margin-bottom: 4rem;
+	box-shadow: 0px 1px 17px -5px rgba(0,0,0,0.75);
 }
+
 
 #profile-picture-container {
 
@@ -149,5 +155,5 @@ footer {
 	z-index: 2;
 	/* border: 1px solid red; */
 	height: 5vh;
-	box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px -.5px 5px 0px rgba(0,0,0,0.75);
 }
