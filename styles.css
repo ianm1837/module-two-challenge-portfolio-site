@@ -1,7 +1,7 @@
 :root {
 	color-scheme: dark;
 	--00dp-backgroung-color: rgb(18, 18, 18);
-	--01dp-background-color: rgba(255, 255, 255, 0.05);
+	--01dp-background-color: rgb(34, 34, 34);
 	--02dp-background-color: rgba(255, 255, 255, 0.07);
 	--03dp-background-color: rgba(255, 255, 255, 0.08);
 	--04dp-background-color: rgba(255, 255, 255, 0.09);
@@ -34,9 +34,14 @@ html {
 body {
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 header {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	background-color: var(--01dp-background-color);
 	background-size: cover;
 	display: flex;
@@ -84,15 +89,15 @@ button,
 
 main {
 	display: flex;
-	height: 95vh;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	justify-content: flex-start;
-	flex-shrink: 0;
+	flex-shrink: 1;
 	flex-grow: 1;
 	scroll-behavior: smooth; 
-	overflow: scroll;
+	overflow-y: scroll;
 	overflow-x: hidden;
 	padding: 2rem 2rem 2rem 2rem;
 	scroll-snap-type: y mandatory;
@@ -113,7 +118,7 @@ main {
 	flex-wrap: wrap;
 	flex-shrink: 0;
 	flex-grow: 1;
-	flex-basis: 70rem;
+	flex-basis: 50rem;
 	min-width: 0;
 	min-height: 100%;
 }
@@ -322,9 +327,9 @@ main {
 	justify-content: center;
 	flex-shrink: 0;
 	flex-grow: 1;
-	flex-basis: 70rem;
+	flex-basis: 20rem;
 	min-width: 0;
-	min-height: 100%;
+	min-height: 80%;
 }
 
 #contact-form-card {
@@ -390,23 +395,23 @@ main {
 		width: 7rem;
 		height: 3rem;
 	}
-	#about-profile-picture {
-		margin-top: -15rem;
-	}
+	/* #about-profile-picture {
+		margin-top: -10rem;
+	} */
 
 	#about-content-container {
-		margin-top: -30rem;
+		margin-top: -7rem;
 	}
 	#section-one {
-		min-height: 130%;
-	}
-
-
-	/* #section-two {
-		min-height: 170%;
-		margin-top: -20rem;
-	}
-	#section-three {
 		min-height: 100%;
-	} */
+	}
+	#section-two {
+		min-height: 150%;
+		flex-basis: 110rem;
+	}
+}
+@media (max-height: 1000px) {
+	main {
+		scroll-snap-type: none;
+	}
 }
