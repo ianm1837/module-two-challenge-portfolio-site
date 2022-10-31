@@ -96,7 +96,7 @@ main {
 	overflow: scroll;
 	overflow-x: hidden;
 	padding: 2rem 2rem 2rem 2rem;
-	/* scroll-snap-type: y mandatory; */
+	scroll-snap-type: y mandatory;
 }
 
 .card {
@@ -114,6 +114,7 @@ main {
 	justify-content: center;
 	flex-wrap: wrap;
 	min-width: 0;
+	min-height: 100%;
 	flex: 1 1 0;
 
 	/* border: 1px solid red; */
@@ -167,6 +168,7 @@ main {
 	justify-content: center;
 	flex-grow: 1;
 	min-width: 0;
+	min-height: 100%;
 	flex: 1 1 0;
 
 	/* border: 1px solid red; */
@@ -319,6 +321,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	min-width: 0;
+	min-height: 100%;
 	flex: 1 1 0;
 
 	/* border: 1px solid red; */
@@ -377,6 +380,33 @@ main {
 #linkedin {
 	height: 3rem;
 	width: auto;
+}
+
+@media (max-width: 814px) {
+	main {
+		scroll-snap-type: none;
+	}
+	button,
+	.button {
+		width: 10rem;
+		height: 3rem;
+	}
+	#section-one {
+		min-height: 130%;
+	}
+	#about-profile-picture {
+		margin-top: -15rem;
+	}
+	#about-content-container {
+		margin-top: -40rem;
+	}
+	#section-two {
+		min-height: 170%;
+		margin-top: -20rem;
+	}
+	#section-three {
+		min-height: 100%;
+	}
 }
 
 

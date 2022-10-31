@@ -1,5 +1,5 @@
 function navScroller(position){
-	document.getElementById(position).scrollIntoView({block: 'center' })
+	document.getElementById(position).scrollIntoView({block: "start"})
 }
 
 const main = document.querySelector("#main");
