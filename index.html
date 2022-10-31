@@ -30,22 +30,99 @@
 					<div id="about-content-container">
 						<p id="about-content">
 							👋 Hi, I'm Ian. <br><br>
-							I like to solve problems. I've spent most of my career in support, and I'm almost always working on something big. I have a passion for automation and self hosting applications online. In my down time I like to escape to my garage to fix and modify cars or explore somewhere new in the PNW.</p>
+							I like to solve problems. 
+							I've spent most of my career in support, 
+							and I'm almost always working on something big. 
+							I have a passion for automation and self hosting applications online. 
+							In my down time I like to escape to my garage to fix and modify cars or explore somewhere new in the PNW.</p>
 					</div>
 				</div>
 				<div id="section-two" class="card">
-					<div class="card-elevated">
-						<div id="work-part-one">
-							<h2>My Projects</h2>
+					<div id="work-card-container">
+						<div id="work-card-one" class="">
+							<div class="that-image-container">
+								<a href="https://github.com/ianm1837/that-messaging-app">
+									<img src="/images/that-messaging-app.png" id="that-messaging-app" alt="That Messaging App">
+								</a>
+							</div>
+							<div class="that-text-container">
+								<p>That Messaging App is a work in progress. 
+									The goal is do have a simple, secure, private, dockerized, 
+									self hosted app that can be used for free by anyone. 😎
+									</p>
+									<br>
+									<a class="app-tag">#App</a>
+							</div>
 						</div>
-						<div id="work-part-two">
-							<h2>Self Hosting</h2>
-							<img id="mattermost-image" src="images/mattermost.svg" alt="Mattermost Logo">
+						<div id="work-card-three" class="smaller-work-card wrap-class">
+							
+							<h2 class="audio-header">Windows Audio Device Maintainer</h2>
+							<div class="audio-image">
+								<a href="https://github.com/ianm1837/windows-audio-device-maintainer/settings">
+									<img src="/images/audio.png" id="audio" alt="Audio">
+								</a>	
+							</div>
+							
+							<div class="audio-content">
+								<br>
+								<p>
+									Long name, simple concept. 
+									Stop windows from changing your audio device all the time!</p>
+								<br>
+								<a class="app-tag">#App</a>
+							</div>
+						</div>
+						<div id="work-card-four" class="smaller-work-card wrap-class">
+							<a href="https://mattermost.ianm1837.com/login">
+								<img src="/images/Mattermost.svg" class="mattermost">
+							</a>	
+							<p>
+								Mattermost is a Slack-Like chat app that I host on a secure VPS behind Cloudflare. 
+								I use this to work with colleagues and chat with friends.
+							</p>
+							<br>
+							<a class="host-tag">#Hosted</a>
+						</div>
+						<div id="work-card-five" class="smaller-work-card wrap-class">
+							<a href="https://meet.ianm1837.com/">
+								<img src="/images/jitsi.png" class="jitsi">
+							</a>
+							<p>
+								Jitsi is a video conferencing app that I host on a secure VPS. 
+								I use this as a secure and private alternative to other apps such as Zoom or Google Meet.</p>
+							<br>
+							<a class="host-tag">#Hosted</a>
+						</div>
+						<div id="work-card-six" class="smaller-work-card wrap-class">
+							<a href="https://nextcloud.ianm1837.com/login">
+								<img class="nextcloud" src="/images/nextcloud.png" alt="Nextcloud">
+							</a>
+							<p>
+								Nextcloud is a self hosted cloud storage app. 
+								I use this to store my files and share them with friends and family.</p>
+							<br>
+							<a class="host-tag">#Hosted</a>
 						</div>
 					</div>
 				</div>
 				<div id="section-three" class="card bottom-card">
-					<h1>Contact</h1>
+					<div id="contact-form-card">
+						<h1>Contact me</h1>
+						<form id="contact-form">
+							<!-- <label for="name">Name</label> -->
+							<input type="text" id="name" name="name" placeholder="Your name..">
+							<!-- <label for="email">Email</label> -->
+							<input type="email" id="email" name="email" placeholder="Your email..">
+							<!-- <label for="subject">Subject</label> -->
+							<textarea id="subject" name="subject" placeholder="How can I help?" style="height:200px"></textarea>
+							<input type="button" value="Send">
+						</form>
+						<div id="social">
+							<img src="/images/octocat.png" id="octocat" alt="Octocat">
+							<img src="/images/linkedin.png" id="linkedin" alt="LinkedIn">
+						</div>
+
+					</div>
 				</div>
 			</Main>
 		<script src="scripts.js" async defer></script>
