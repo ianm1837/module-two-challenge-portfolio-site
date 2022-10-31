@@ -116,7 +116,7 @@ main {
 	flex-wrap: wrap;
 	flex-shrink: 0;
 	flex-grow: 1;
-	flex-basis: 37rem;
+	flex-basis: 30rem;
 	min-width: 0;
 	min-height: 100%;
 }
@@ -384,6 +384,9 @@ main {
 	width: auto;
 }
 @media (max-width:1110px){
+	#section-one {
+		flex-basis: 50rem;
+	}
 	#about-content-container{
 		margin-top: -7rem;
 	}
