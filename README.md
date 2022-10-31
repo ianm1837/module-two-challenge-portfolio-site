@@ -1,5 +1,7 @@
 # Module Two Challenge - Portfolio Website
 
+![image](https://user-images.githubusercontent.com/65581204/198948666-b1ee763a-c683-45f6-902e-bf08109e79fd.png)
+
 ## User Story
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
@@ -25,3 +27,7 @@ THEN I am taken to that deployed application
 
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+
+
+
+
