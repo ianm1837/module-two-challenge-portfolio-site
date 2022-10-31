@@ -37,7 +37,6 @@ body {
 }
 
 header {
-	/* background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/images/header-picture.jpg); */
 	background-color: var(--01dp-background-color);
 	background-size: cover;
 	display: flex;
@@ -50,7 +49,6 @@ header {
 
 header nav {
 	display: flex;
-	/* justify-content: space-between; */
 }
 
 #button-container {
@@ -101,7 +99,6 @@ main {
 
 .card {
 	width: 100%;
-	/* min-height: 100%; */
 	padding: 1rem;
 	margin-bottom: 2rem;
 	scroll-snap-align: center;
@@ -116,8 +113,6 @@ main {
 	min-width: 0;
 	min-height: 100%;
 	flex: 1 1 0;
-
-	/* border: 1px solid red; */
 }
 
 #about-profile-picture {
@@ -170,8 +165,6 @@ main {
 	min-width: 0;
 	min-height: 100%;
 	flex: 1 1 0;
-
-	/* border: 1px solid red; */
 }
 
 .card-elevated {
@@ -190,7 +183,6 @@ main {
 	flex-direction: row;
 	justify-content: center;
 	max-width: 60rem;
-	/* height: 60rem; */
 	flex-wrap: wrap;
 	flex-grow: 1;
 }
@@ -255,7 +247,6 @@ main {
 #audio {
 	height: 4rem;
 	width: auto;
-	
 }
 
 #work-card-three {
@@ -288,7 +279,6 @@ main {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	
 }
 
 .mattermost {
@@ -329,8 +319,6 @@ main {
 	min-width: 0;
 	min-height: 100%;
 	flex: 1 1 0;
-
-	/* border: 1px solid red; */
 }
 
 #contact-form-card {
@@ -375,7 +363,6 @@ main {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	/* border: 1px solid red; */
 }
 
 #octocat {
@@ -414,8 +401,3 @@ main {
 		min-height: 100%;
 	}
 }
-
-/*  */
-
-
-	/* border: 1px solid red; */
