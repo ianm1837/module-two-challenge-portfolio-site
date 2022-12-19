@@ -254,6 +254,7 @@ main {
 #audio {
 	height: 4rem;
 	width: auto;
+	border-radius: 8px;
 }
 
 #work-card-three {
