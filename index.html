@@ -1,129 +1,187 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Ian Meyer</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-			<nav>
-				<input type="button" id="about-button" class="section-one button button-active" value="About" onClick="navScroller('section-one')">
-				<input type="button" id="work-button" class="section-two button" value="Work" onClick="navScroller('section-two')">
-				<input type="button" id="contact-button" class="section-three button" value="Contact" onClick="navScroller('section-three')">
-			</nav>
-		</header>
-			<Main id="main" onscroll="onScroll();">
-				<div id="section-one" class="card">
-					<div id="about-profile-picture">
-						<div id="profile-picture-container">
-							<img id="profile-picture" src="images/profile-picture.jpg" alt="Profile Picture">
-						</div>
-					</div>
-					<div id="about-content-container">
-						<p id="about-content">
-							👋 Hi, I'm Ian. <br><br>
-							I like to solve problems. 
-							I've spent most of my career in support, 
-							and I'm almost always working on something big. 
-							I have a passion for automation and self hosting applications online. 
-							In my down time I like to escape to my garage to fix and modify cars or explore somewhere new in the PNW.</p>
-					</div>
-				</div>
-				<div id="section-two" class="card">
-					<div id="work-card-container">
-						<div id="work-card-one" class="">
-							<div class="that-image-container">
-								<a href="https://github.com/ianm1837/that-messaging-app">
-									<img src="images/that-messaging-app.png" id="that-messaging-app" alt="That Messaging App">
-								</a>
-							</div>
-							<div class="that-text-container">
-								<p>That Messaging App is a work in progress. 
-									The goal is do have a simple, secure, private, dockerized, 
-									self hosted app that can be used for free by anyone. 😎
-									</p>
-									<br>
-									<a class="app-tag">#App</a>
-							</div>
-						</div>
-						<div id="work-card-three" class="smaller-work-card wrap-class">
-							
-							<h2 class="audio-header">Windows Audio Device Maintainer</h2>
-							<br>
-							<div class="audio-image">
-								<a href="https://github.com/ianm1837/windows-audio-device-maintainer">
-									<img src="images/audio.png" id="audio" alt="Audio">
-								</a>	
-							</div>
-							<div class="audio-content">
-								<p>
-									Long name, simple concept. 
-									Stop windows from changing your audio device all the time!</p>
-								<br>
-								<a class="app-tag">#App</a>
-							</div>
-						</div>
-						<div id="work-card-four" class="smaller-work-card wrap-class">
-							<a href="https://mattermost.ianm1837.com/login">
-								<img src="images/mattermost.svg" class="mattermost">
-							</a>	
-							<p>
-								Mattermost is a Slack-Like chat app that I host on a secure VPS behind Cloudflare. 
-								I use this to work with colleagues and chat with friends.
-							</p>
-							<br>
-							<a class="host-tag">#Hosted</a>
-						</div>
-						<div id="work-card-five" class="smaller-work-card wrap-class">
-							<a href="https://meet.ianm1837.com/">
-								<img src="images/jitsi.png" class="jitsi">
-							</a>
-							<p>
-								Jitsi is a video conferencing app that I host on a secure VPS. 
-								I use this as a secure and private alternative to other apps such as Zoom or Google Meet.</p>
-							<br>
-							<a class="host-tag">#Hosted</a>
-						</div>
-						<div id="work-card-six" class="smaller-work-card wrap-class">
-							<a href="https://nextcloud.ianm1837.com/login">
-								<img class="nextcloud" src="images/nextcloud.png" alt="Nextcloud">
-							</a>
-							<p>
-								Nextcloud is a self hosted cloud storage app. 
-								I use this to store my files and share them with friends and family.</p>
-							<br>
-							<a class="host-tag">#Hosted</a>
-						</div>
-					</div>
-				</div>
-				<div id="section-three" class="card bottom-card">
-					<div id="contact-form-card">
-						<h1>Contact me</h1>
-						<form id="contact-form">
-							<input type="text" id="name" name="name" placeholder="Your name..">
-							<input type="email" id="email" name="email" placeholder="Your email..">
-							<textarea id="subject" name="subject" placeholder="How can I help?" style="height:200px"></textarea>
-							<input type="button" value="Send">
-						</form>
-						<div id="social">
-							<a href="https://github.com/ianm1837">
-								<img src="images/Octocat.png" id="octocat" alt="Octocat">
-							</a>
-							<a href="www.linkedin.com/in/ian-meyer-88080012b">
-								<img src="images/linkedin.png" id="linkedin" alt="LinkedIn">
-							</a>
-						</div>
-
-					</div>
-				</div>
-			</Main>
-		<script src="scripts.js" async defer></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ian Meyer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input
+          type="button"
+          id="about-button"
+          class="section-one button button-active"
+          value="About"
+          onClick="navScroller('section-one')"
+        />
+        <input
+          type="button"
+          id="work-button"
+          class="section-two button"
+          value="Work"
+          onClick="navScroller('section-two')"
+        />
+        <input
+          type="button"
+          id="contact-button"
+          class="section-three button"
+          value="Contact"
+          onClick="navScroller('section-three')"
+        />
+      </nav>
+    </header>
+    <main id="main" onscroll="onScroll();">
+      <div id="section-one" class="card">
+        <div id="about-profile-picture">
+          <div id="profile-picture-container">
+            <img
+              id="profile-picture"
+              src="images/profile-picture.jpg"
+              alt="Profile Picture"
+            />
+          </div>
+        </div>
+        <div id="about-content-container">
+          <p id="about-content">
+            👋 Hi, I'm Ian. <br /><br />
+            I like to solve problems. I've spent most of my career in support,
+            and I'm almost always working on something big. I have a passion for
+            automation and self hosting applications online. In my down time I
+            like to escape to my garage to fix and modify cars or explore
+            somewhere new in the PNW.
+          </p>
+        </div>
+      </div>
+      <div id="section-two" class="card">
+        <div id="work-card-container">
+          <div id="work-card-one" class="">
+            <div class="that-image-container">
+              <a href="https://github.com/ianm1837/that-messaging-app">
+                <img
+                  src="images/that-messaging-app.png"
+                  id="that-messaging-app"
+                  alt="That Messaging App"
+                />
+              </a>
+            </div>
+            <div class="that-text-container">
+              <p>
+                That Messaging App is a work in progress. The goal is do have a
+                simple, secure, private, dockerized, self hosted app that can be
+                used for free by anyone. 😎
+              </p>
+              <br />
+              <a class="app-tag">#App</a>
+            </div>
+          </div>
+          <a
+            class="no-decoration"
+            href="https://floating-thicket-35501.herokuapp.com/"
+          >
+            <div id="work-card-three" class="smaller-work-card wrap-class">
+              <h2 class="audio-header">GameSphere</h2>
+              <br />
+              <div class="audio-image">
+                <img src="images/logo.png" id="audio" alt="Audio" />
+              </div>
+              <div class="audio-content">
+                <p>
+                  GameSphere is a gaming social media platform that I built with
+                  a team of 5. It's a full stack app that uses express,
+                  sequelize, and handlebars. It's hosted on Heroku and uses a
+                  MySQL database.
+                </p>
+                <br />
+                <a class="app-tag">#App</a>
+              </div>
+            </div>
+          </a>
+          <div id="work-card-four" class="smaller-work-card wrap-class">
+            <a href="https://mattermost.ianm1837.com/login">
+              <img src="images/mattermost.svg" class="mattermost" />
+            </a>
+            <p>
+              Mattermost is a Slack-Like chat app that I host on a secure VPS
+              behind Cloudflare. I use this to work with colleagues and chat
+              with friends.
+            </p>
+            <br />
+            <a class="host-tag">#Hosted</a>
+          </div>
+          <div id="work-card-five" class="smaller-work-card wrap-class">
+            <a href="https://meet.ianm1837.com/">
+              <img src="images/jitsi.png" class="jitsi" />
+            </a>
+            <p>
+              Jitsi is a video conferencing app that I host on a secure VPS. I
+              use this as a secure and private alternative to other apps such as
+              Zoom or Google Meet.
+            </p>
+            <br />
+            <a class="host-tag">#Hosted</a>
+          </div>
+          <div id="work-card-six" class="smaller-work-card wrap-class">
+            <a href="https://nextcloud.ianm1837.com/login">
+              <img
+                class="nextcloud"
+                src="images/nextcloud.png"
+                alt="Nextcloud"
+              />
+            </a>
+            <p>
+              Nextcloud is a self hosted cloud storage app. I use this to store
+              my files and share them with friends and family.
+            </p>
+            <br />
+            <a class="host-tag">#Hosted</a>
+          </div>
+        </div>
+      </div>
+      <div id="section-three" class="card bottom-card">
+        <div id="contact-form-card">
+          <h1>Contact me</h1>
+          <form id="contact-form">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="How can I help?"
+              style="height: 200px"
+            ></textarea>
+            <input type="button" value="Send" />
+          </form>
+          <div id="social">
+            <a href="https://github.com/ianm1837">
+              <img src="images/Octocat.png" id="octocat" alt="Octocat" />
+            </a>
+            <a href="www.linkedin.com/in/ian-meyer-88080012b">
+              <img src="images/linkedin.png" id="linkedin" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts.js" async defer></script>
+  </body>
 </html>

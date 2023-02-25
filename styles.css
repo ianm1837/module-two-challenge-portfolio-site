@@ -64,6 +64,10 @@ header nav {
 	overflow: hidden;
 }
 
+.no-decoration {
+	text-decoration: none;
+}
+
 button,
 .button {
 	font-size: large;
@@ -263,6 +267,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	text-decoration: none;
 }
 
 .audio-image {
